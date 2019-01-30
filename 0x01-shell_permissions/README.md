@@ -1,0 +1,1 @@
+Permitions in linux ubuntu
