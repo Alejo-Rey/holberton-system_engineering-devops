@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#Print strin g in a loop while
+str="Holberton School"
+x=0
+while ((x < 10))
+do
+	echo "$str"
+	if ((x == 8))
+	then
+	    echo Hi
+	fi
+	((x++))
+done

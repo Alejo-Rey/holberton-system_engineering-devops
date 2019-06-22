@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#print holberton scholl in a loop
+str="Holberton School"
+for ((i=0;i<=9;i++))
+do
+    echo "$str"
+done
