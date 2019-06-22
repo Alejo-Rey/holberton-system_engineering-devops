@@ -1,1 +1,17 @@
 #!/usr/bin/env bash
+#Print strin g in a loop while
+str="Holberton School"
+x=1
+while ((x <= 10))
+do
+	if ((x == 4))
+	then
+        echo bad luck
+    elif((x == 8))
+    then
+        echo good luck
+    else
+        echo "$str"
+	fi
+	((x++))
+done
