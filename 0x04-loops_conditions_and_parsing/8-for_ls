@@ -1,1 +1,7 @@
 #!/usr/bin/env bash
+#function to list and modify the result
+file="$(ls)"
+for x in $file
+do
+    echo "$x" | cut -d "-" -f 2
+done
