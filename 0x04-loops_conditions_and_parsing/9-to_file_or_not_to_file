@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #check for the files
 x="holbertonschool"
-if [ ! -f $x ]
+if [ ! -e $x ]
 then
     echo holbertonschool file does not exist
 else
