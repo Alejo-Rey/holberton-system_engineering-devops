@@ -1,1 +1,21 @@
 #!/usr/bin/env bash
+#check for the files
+x="holbertonschool"
+if [ ! -f $x ]
+then
+    echo holbertonschool file does not exist
+else
+    echo holbertonschool file exists
+    if [ -s $x ]
+    then
+        echo holbertonschool file is not empty
+    fi
+    if [ ! -s $x ]
+    then
+        echo holbertonschool file is empty
+    fi
+    if [ -f $x ]
+    then
+        echo holbertonschool is a regular file
+    fi
+fi
