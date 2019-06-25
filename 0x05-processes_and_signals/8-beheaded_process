@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#using -9 to kill the proced
+kill -9 "$(pgrep -f 7-highlander)"
