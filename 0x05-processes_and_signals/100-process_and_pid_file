@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#kill with signals
 echo $$ > '/var/run/holbertonscript.pid' 
 trap 'rm /var/run/holbertonscript.pid; echo I hate the kill command; kill -9 $$' 15
 trap 'echo Y U no love me?!' 2
