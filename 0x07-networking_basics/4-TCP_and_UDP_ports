@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-netstat
+#command to see linten port
+netstat -l
