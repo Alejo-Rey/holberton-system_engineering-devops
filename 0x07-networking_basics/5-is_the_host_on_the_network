@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+#command to verify the conection
 ping
