@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-ssh ubuntu@35.237.63.104
+ssh -i holberton.pub ubuntu@35.237.63.104
