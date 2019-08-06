@@ -1,1 +1,5 @@
 #!/usr/bin/env bash
+# configuration ssh client for no pass and use holberton key
+host *
+    PasswordAuthentication No
+    IdentityFile ~/.ssh/holberton
