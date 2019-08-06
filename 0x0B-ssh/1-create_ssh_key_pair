@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# script to create a apir key qith phrase nad rsa 4096
+ssh-keygen -t rsa -b 4096 -f holberton -N betty
