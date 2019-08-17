@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# change the port listen of the nginx
+sudo sed -i 's!8080 !80 !' /etc/nginx/sites-enabled/default
+sudo service nginx start
