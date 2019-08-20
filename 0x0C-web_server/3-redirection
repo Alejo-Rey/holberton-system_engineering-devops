@@ -5,6 +5,6 @@ sudo apt-get update
 sudo apt-get -y install nginx
 echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
 str="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=SK9KEwE6JmE permanent;"
-sed -i "19i $str" /etc/nginx/sites-available/default
+sed -i "37i $str" /etc/nginx/sites-available/default
 sudo service nginx reload
 sudo service nginx restart
