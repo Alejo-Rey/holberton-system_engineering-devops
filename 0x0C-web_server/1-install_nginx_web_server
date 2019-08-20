@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # modify the index html of the nginx
-sudo apt-get update
-sudo apt-get -y install nginx
+sudo apt update
+sudo apt -y install nginx
 sudo service nginx start
 sudo echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
 sudo service nginx restart
