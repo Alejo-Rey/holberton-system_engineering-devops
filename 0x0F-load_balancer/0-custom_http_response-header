@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# configure the same server and add hearder response
+sudo apt-get update
+sudo apt-get -y install nginx 
+str="\\\tadd_header X-Served-By $HOSTNAME;"
+sudo sed -i "51i $str" /etc/nginx/sites-available/default
+sudo service nginx reload
+sudo service nginx restart
