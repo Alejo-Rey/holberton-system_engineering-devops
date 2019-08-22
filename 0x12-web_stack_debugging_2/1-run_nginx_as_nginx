@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
-# ifx the file nginx.conf changit the permitions
-chwon nginx /etc/nginx/nginx.conf
-chwon :nginx /etc/nginx/nginx.conf
+# fix the file nginx.conf changit the permitions
+pkill apache2
+chmod 644 /etc/nginx/nginx.conf
+chown nginx:nginx /etc/nginx/nginx.conf
+sed -i 's!listen 80 default_server!listen 8080 default_server!' /etc/nginx/sites-available/default
+sed -i 's!8080 !80 !' /etc/nginx/sites-enabled/default
+service nginx start
