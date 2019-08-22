@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # ifx the file nginx.conf changit the permitions
 chwon nginx /etc/nginx/nginx.conf
+chwon :nginx /etc/nginx/nginx.conf
