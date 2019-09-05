@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 CURRENTDATE=`date +"%d-%m-%Y"`
-mysqldump -u root -p --opt tyrell_corp > backup.sql
+mysqldump -u root -p"$1" --opt tyrell_corp > backup.sql
 cat backup.sql | gzip -c | cat > ${CURRENTDATE}.tar.gz
