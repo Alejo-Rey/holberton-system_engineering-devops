@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
+# scripto back up
 
-CURRENTDATE=`date +"%d-%m-%Y"`
-mysqldump -u root -p"$1" --opt tyrell_corp > backup.sql
-cat backup.sql | gzip -c | cat > ${CURRENTDATE}.tar.gz
+
+CURRENTDATE=$(date +"%d-%m-%Y")
+mysqldump -u root -p"$1" --opt --all-databases > backup.sql
+cat backup.sql | gzip -c | cat > "${CURRENTDATE}".tar.gz
