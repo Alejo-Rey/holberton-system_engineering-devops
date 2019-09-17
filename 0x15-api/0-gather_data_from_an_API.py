@@ -18,7 +18,7 @@ for x in req_datos:
     if x.get('completed') is True:
         new_list.append("{}".format(x.get('title')))
 
-print("Employee {} is done with task({}/{}):"
+print("Employee {} is done with tasks({}/{}):"
       .format(req_user[0].get('name'),
               len(new_list), len(req_datos)))
 
